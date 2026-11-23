@@ -1,0 +1,15 @@
+\begin{table}[!htbp]\centering
+\caption{Ablation on a reduced subset of \nNABLB{} blocks, one design change per row, so values differ from Table~\ref{tab:overall}. ``null'' is exact recovery of $k=1$ on structureless blocks.}
+\label{tab:ablation}
+\begin{tabular}{lrrr}
+\toprule
+Variant & $\overline{|\hat k-k^\star|}$ & exact struct.\ (\%) & null (\%) \\ \midrule
+\textbf{CDK (default)} & 0.381 & 77.9 & 96.2 \\
+no multiplicity corr. & 0.412 & 74.6 & 82.5 \\
+$n_{\min}=15$ & 0.491 & 74.2 & 85.0 \\
+AD statistic & 0.547 & 70.4 & 90.0 \\
+Gaussian null & 0.725 & 68.8 & 77.5 \\
+$n_{\min}=40$ & 1.066 & 73.3 & 88.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

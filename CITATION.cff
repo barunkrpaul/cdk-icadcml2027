@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or these results, please cite the paper below."
+title: "CDK: Certified Divisive k (code and results)"
+type: software
+license: MIT
+authors:
+  - family-names: Paul
+    given-names: Barun Kr.
+  - family-names: Giri
+    given-names: Kinsuk
+preferred-citation:
+  type: conference-paper
+  title: "Determining k Without a Range: A Certified Divisive Test and What Current Benchmarks Cannot Measure"
+  authors:
+    - family-names: Paul
+      given-names: Barun Kr.
+    - family-names: Giri
+      given-names: Kinsuk
+  conference:
+    name: "8th International Conference on Advances in Distributed Computing and Machine Learning (ICADCML 2027)"
+  collection-title: "Lecture Notes in Networks and Systems"
+  publisher:
+    name: Springer
+  year: 2027

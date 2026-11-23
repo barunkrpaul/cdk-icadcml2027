@@ -1,0 +1,31 @@
+\begin{table}[!htbp]\centering
+\caption{Headline results over all \nNBLOCK{} blocks of the full protocol, sorted by mean absolute error in $k$. ``struct.'' restricts to $k^\star>1$, ``real 1-cl.'' to the single-class real extracts.}
+\label{tab:overall}
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{0.85}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Method & \hd{mean}{$|\hat k-k^\star|$} & \hd{exact}{all (\%)} & \hd{exact}{struct.\ (\%)} &
+\hd{syn.\ null}{$\hat k{=}1$ (\%)} & \hd{real 1-cl.}{$\hat k{=}1$ (\%)} &
+\hd{ARI}{all} & \hd{ARI}{struct.} & \hd{time}{(s)} \\ \midrule
+\textbf{CDK} & 0.70 & 70.1 & 63.5 & 94 & 90 & 0.816 & 0.784 & 3.80 \\
+HDBSCAN & 0.75 & 63.5 & 69.2 & 51 & 29 & 0.730 & 0.816 & 0.01 \\
+Bisecting+Sil. & 0.92 & 53.8 & 69.6 & 0 & 0 & 0.651 & 0.843 & 0.13 \\
+Gap statistic & 0.93 & 53.4 & 69.1 & 0 & 0 & 0.645 & 0.835 & 0.50 \\
+GMM+ICL & 1.12 & 45.6 & 59.1 & 0 & 0 & 0.640 & 0.829 & 0.41 \\
+GMM+BIC & 1.37 & 42.0 & 54.4 & 0 & 0 & 0.636 & 0.824 & 0.39 \\
+Silhouette & 1.39 & 60.7 & 78.6 & 0 & 0 & 0.683 & 0.884 & 0.18 \\
+Calinski-Har. & 1.41 & 61.3 & 79.4 & 0 & 0 & 0.668 & 0.864 & 0.12 \\
+Elbow (Kneedle) & 1.43 & 58.5 & 75.8 & 0 & 0 & 0.638 & 0.826 & 0.12 \\
+dip-means & 1.85 & 71.2 & 62.7 & 100 & 100 & 0.747 & 0.672 & 0.06 \\
+Davies-Bouldin & 2.03 & 63.0 & 81.5 & 0 & 0 & 0.682 & 0.884 & 0.14 \\
+G-means & 2.38 & 36.2 & 33.6 & 52 & 29 & 0.720 & 0.800 & 0.03 \\
+X-means & 2.70 & 37.0 & 47.9 & 0 & 0 & 0.631 & 0.817 & 0.04 \\
+Jump statistic & 2.95 & 62.3 & 80.6 & 0 & 0 & 0.669 & 0.866 & 0.12 \\
+ISODATA & 3.88 & 29.1 & 37.7 & 0 & 0 & 0.580 & 0.750 & 0.02 \\
+MDL split/merge & 4.33 & 54.6 & 59.1 & 50 & 14 & 0.708 & 0.802 & 0.14 \\
+\bottomrule
+\end{tabular}}
+\end{table}

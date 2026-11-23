@@ -1,0 +1,36 @@
+Friedman over 1010 paired blocks and 16 methods: chi2=1652.7, p=0.000e+00
+
+Mean rank on |k_hat - k*| (lower is better):
+     6.91  HDBSCAN
+     7.00  CDK (proposed)
+     7.59  dip-means
+     7.66  Gap statistic
+     7.70  Bisecting+Sil.
+     7.72  Silhouette
+     7.85  Calinski-Har.
+     8.05  Elbow (Kneedle)
+     8.10  GMM+ICL
+     8.20  Davies-Bouldin
+     8.56  GMM+BIC
+     8.96  Jump statistic
+     9.84  MDL split/merge
+    10.12  G-means
+    10.39  X-means
+    11.35  ISODATA
+
+Pairwise Wilcoxon signed-rank against CDK (proposed), Holm-adjusted (NOT Nemenyi; see Benavoli et al. 2016):
+   ISODATA                mean-diff=+3.176  p_raw=5.01e-87  p_holm=7.521e-86   CDK better
+   G-means                mean-diff=+1.675  p_raw=6.26e-68  p_holm=8.760e-67   CDK better
+   X-means                mean-diff=+2.002  p_raw=8.67e-64  p_holm=1.127e-62   CDK better
+   MDL split/merge        mean-diff=+3.629  p_raw=4.05e-44  p_holm=4.862e-43   CDK better
+   GMM+BIC                mean-diff=+0.672  p_raw=1.45e-26  p_holm=1.590e-25   CDK better
+   Jump statistic         mean-diff=+2.246  p_raw=8.35e-19  p_holm=8.353e-18   CDK better
+   GMM+ICL                mean-diff=+0.425  p_raw=1.65e-15  p_holm=1.486e-14   CDK better
+   Elbow (Kneedle)        mean-diff=+0.733  p_raw=6.52e-13  p_holm=5.220e-12   CDK better
+   Davies-Bouldin         mean-diff=+1.332  p_raw=4.96e-09  p_holm=3.469e-08   CDK better
+   Calinski-Har.          mean-diff=+0.710  p_raw=1.18e-07  p_holm=7.084e-07   CDK better
+   Bisecting+Sil.         mean-diff=+0.223  p_raw=1.88e-07  p_holm=9.388e-07   CDK better
+   Gap statistic          mean-diff=+0.227  p_raw=2.21e-07  p_holm=9.388e-07   CDK better
+   Silhouette             mean-diff=+0.691  p_raw=7.10e-06  p_holm=2.129e-05   CDK better
+   dip-means              mean-diff=+1.147  p_raw=1.79e-05  p_holm=3.574e-05   CDK better
+   HDBSCAN                mean-diff=+0.054  p_raw=5.91e-01  p_holm=5.909e-01   n.s.
